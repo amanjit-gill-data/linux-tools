@@ -30,6 +30,6 @@ rsync -avzd \
   $HOME/Pictures \
   $LISTS \
   backup:x1-yoga \
-  > $LOG
+  > $LOG 2>&1
 
 
