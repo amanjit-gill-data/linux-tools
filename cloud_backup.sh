@@ -2,8 +2,10 @@
 
 export BACKUP_ROOT="$HOME/.backup"
 export LISTS="$BACKUP_ROOT/software_lists"
-export LOG="$BACKUP_ROOT/log.txt"
 mkdir -p $LISTS 
+
+# output date and time to mark the start of the backup
+date
 
 # STEP 1. CREATE LISTS OF INSTALLED SOFTWARE
 
@@ -29,7 +31,5 @@ rsync -avzd \
   $HOME/Downloads \
   $HOME/Pictures \
   $LISTS \
-  backup:x1-yoga \
-  > $LOG 2>&1
-
+  backup:x1-yoga
 
