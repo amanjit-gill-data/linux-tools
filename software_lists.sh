@@ -4,8 +4,8 @@
 # ensure backup dirs are defined
 source "$HOME/bin/backup_dirs.sh"
 
-# output date and time to mark start of job
-date
+# note that software list update has been triggered 
+echo "update of software lists triggered"
 
 # list of downloaded software 
 ls $HOME/Downloads/software/ -ohgRN --group-directories-first > $LISTS/software_downloads.txt
