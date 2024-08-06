@@ -19,6 +19,7 @@ rsync -avz \
   $HOME/Documents \
   $HOME/Downloads \
   $HOME/Pictures \
+  $HOME/Videos \
   $LISTS \
   backup:x1-yoga
 
